@@ -78,6 +78,7 @@
 	--color-accent-light: var(--accent-light);
 	--color-gradient-from: var(--gradient-from);
 	--color-gradient-to: var(--gradient-to);
+	--color-terraform-primary: #5d4fe5;
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
 }

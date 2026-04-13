@@ -1,10 +1,11 @@
-import { GitHubIcon, ArrowIcon, StarIcon } from "./components/Icons";
 import Image from "next/image";
-import terranextIcon from "./icon.svg";
+import { SiTerraform } from "react-icons/si";
 import { CodeBlock } from "./components/CodeBlock";
-import { ThemeToggle } from "./components/ThemeToggle";
+import { ArrowIcon, GitHubIcon, StarIcon } from "./components/Icons";
 import { Quiz } from "./components/Quiz";
-import { GITHUB_URL, QUICK_START_BUILD, QUICK_START_TF, COMPARISONS } from "./data";
+import { ThemeToggle } from "./components/ThemeToggle";
+import { COMPARISONS, GITHUB_URL, QUICK_START_BUILD, QUICK_START_TF, REGISTRY_URL } from "./data";
+import terranextIcon from "./icon.svg";
 
 function StepNumber({ n }: { n: number }) {
 	return (
@@ -172,6 +173,15 @@ export default async function Home() {
 							>
 								<GitHubIcon />
 								View on GitHub
+							</a>
+							<a
+								href={REGISTRY_URL}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-7 py-3.5 text-sm font-semibold transition-all hover:bg-card-hover hover:-translate-y-0.5"
+							>
+								<SiTerraform className="size-5 text-terraform-primary" />
+								View on Registry
 							</a>
 						</div>
 					</div>
