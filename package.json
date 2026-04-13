@@ -24,6 +24,7 @@
 		"eslint-config-next": "16.2.3",
 		"prettier": "3.8.2",
 		"tailwindcss": "^4",
-		"typescript": "^6"
+		"typescript": "^6",
+		"@opennextjs/aws": "3.10.1"
 	}
 }
