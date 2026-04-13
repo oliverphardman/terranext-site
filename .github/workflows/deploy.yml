@@ -47,7 +47,7 @@ jobs:
 
       - name: Build OpenNext
         id: build-opennext
-        run: npx @opennextjs/aws@latest build
+        run: npx @opennextjs/aws@3.10.1 build
 
       - name: Setup Terraform
         id: setup-terraform
