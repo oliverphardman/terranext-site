@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/oliverphardman/terranext-site/compare/v1.1.0...v1.1.1) (2026-04-13)
+
+
+### Bug Fixes
+
+* capitalisation in scan ([b570219](https://github.com/oliverphardman/terranext-site/commit/b5702191b46019f78e16af20201d3d9fdc02f323))
+
 ## [1.1.0](https://github.com/oliverphardman/terranext-site/compare/v1.0.2...v1.1.0) (2026-04-13)
 
 
