@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/oliverphardman/terranext-site/compare/v1.0.2...v1.1.0) (2026-04-13)
+
+
+### Features
+
+* add View on Registry button ([c54fda7](https://github.com/oliverphardman/terranext-site/commit/c54fda7cfc507d58b97a1514654c30f80537da37))
+
 ## [1.0.2](https://github.com/oliverphardman/terranext-site/compare/v1.0.1...v1.0.2) (2026-04-13)
 
 
