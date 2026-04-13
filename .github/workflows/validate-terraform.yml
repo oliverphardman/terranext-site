@@ -23,12 +23,15 @@ jobs:
 
       - name: Check formatting
         id: terraform-format
+        working-directory: infra
         run: terraform fmt -check -recursive
 
       - name: Initialize
         id: terraform-init
+        working-directory: infra
         run: terraform init -backend=false
 
       - name: Validate
         id: terraform-validate
+        working-directory: infra
         run: terraform validate
