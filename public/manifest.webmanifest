@@ -1,16 +1,16 @@
 {
-  "name": "TerraNext",
-  "short_name": "TerraNext",
-  "description": "An opinionated Terraform module to host your Next.js app on AWS without breaking the bank on compute. Built on OpenNext.",
-  "start_url": "/",
-  "display": "browser",
-  "background_color": "#ffffff",
-  "theme_color": "#e8750a",
-  "icons": [
-    {
-      "src": "/favicon.ico",
-      "sizes": "any",
-      "type": "image/x-icon"
-    }
-  ]
+	"name": "TerraNext",
+	"short_name": "TerraNext",
+	"description": "An opinionated Terraform module to host your Next.js app on AWS without breaking the bank on compute. Built on OpenNext.",
+	"start_url": "/",
+	"display": "browser",
+	"background_color": "#ffffff",
+	"theme_color": "#e8750a",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "any",
+			"type": "image/x-icon"
+		}
+	]
 }
