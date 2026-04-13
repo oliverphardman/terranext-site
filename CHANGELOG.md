@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/oliverphardman/terranext-site/compare/v1.0.1...v1.0.2) (2026-04-13)
+
+
+### Bug Fixes
+
+* add missing CloudFront Distribution ID output ([a3a14d2](https://github.com/oliverphardman/terranext-site/commit/a3a14d2be8065f5b0f8580892e6b986f5bd29435))
+* downgraded eslint to ^9 to resolve peer deps ([a16d5cf](https://github.com/oliverphardman/terranext-site/commit/a16d5cf9ab7c98d9e26d1f7b60f87593e21cb51d))
+* full package-lock ([9d9c354](https://github.com/oliverphardman/terranext-site/commit/9d9c354f254c6ca88efa66ba715dcd80cb1c6d67))
+* stop running prettier on push ([6c119fe](https://github.com/oliverphardman/terranext-site/commit/6c119fefc9d4977833af8fd391ddae0ad06d8cdd))
+
 ## [1.0.1](https://github.com/oliverphardman/terranext-site/compare/v1.0.0...v1.0.1) (2026-04-13)
 
 
