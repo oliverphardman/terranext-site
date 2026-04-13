@@ -7,16 +7,16 @@ provider "aws" {
 # DNS
 
 resource "aws_route53_zone" "this" {
-  name = local.domain
+  name    = local.domain
   comment = "TerraNext"
 }
 
 resource "aws_kms_key" "this" {
   customer_master_key_spec = "ECC_NIST_P256"
-  deletion_window_in_days = 7
-  key_usage = "SIGN_VERIFY"
+  deletion_window_in_days  = 7
+  key_usage                = "SIGN_VERIFY"
   policy = jsonencode({
-  Statement = [
+    Statement = [
       {
         Action = [
           "kms:DescribeKey",
@@ -46,15 +46,15 @@ resource "aws_kms_key" "this" {
 }
 
 resource "aws_route53_key_signing_key" "this" {
-  name      = "terranext-dnssec-ksk"
-  hosted_zone_id = aws_route53_zone.this.zone_id
+  name                       = "terranext-dnssec-ksk"
+  hosted_zone_id             = aws_route53_zone.this.zone_id
   key_management_service_arn = aws_kms_key.this.arn
 }
 
 resource "aws_route53_hosted_zone_dnssec" "this" {
   hosted_zone_id = aws_route53_zone.this.zone_id
-  
-  depends_on = [ aws_route53_key_signing_key.this ]
+
+  depends_on = [aws_route53_key_signing_key.this]
 }
 
 # ACM
@@ -99,7 +99,7 @@ resource "aws_acm_certificate_validation" "this" {
 # Terranext
 
 module "terranext" {
-  source  = "oliverphardman/opennext/aws"
+  source = "oliverphardman/opennext/aws"
 
   name                = "TerraNext"
   slug                = "terranext"

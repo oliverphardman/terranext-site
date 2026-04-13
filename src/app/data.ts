@@ -1,4 +1,5 @@
-export const GITHUB_URL = "https://github.com/oliverphardman/terraform-aws-opennext";
+export const GITHUB_URL =
+  "https://github.com/oliverphardman/terraform-aws-opennext";
 
 export const QUICK_START_BUILD = `npx @opennextjs/aws@latest build`;
 
@@ -40,7 +41,7 @@ export const COMPARISONS = [
       "Next.js feature support can lag behind",
       "Limited infrastructure customization",
       "Poor developer experience",
-      "Offering is confusing and bloated"
+      "Offering is confusing and bloated",
     ],
   },
   {
@@ -62,7 +63,7 @@ export const COMPARISONS = [
       "Full control over every resource",
       "Highly cost-effective",
       "Manage your infrastructure with code",
-      "Great if you have other infrastructure"
+      "Great if you have other infrastructure",
     ],
     cons: [
       "More complex",

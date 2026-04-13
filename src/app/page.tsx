@@ -22,8 +22,11 @@ function StepNumber({ n }: { n: number }) {
 async function getStarCount(): Promise<number | null> {
   try {
     const res = await fetch(
-      GITHUB_URL.replace("https://github.com/", "https://api.github.com/repos/"),
-      { next: { revalidate: 3600 } }
+      GITHUB_URL.replace(
+        "https://github.com/",
+        "https://api.github.com/repos/",
+      ),
+      { next: { revalidate: 3600 } },
     );
     if (!res.ok) return null;
     const data = await res.json();
@@ -43,13 +46,18 @@ export default async function Home() {
           <div className="hero-glow -top-48 -right-48" />
           <div className="hero-glow -bottom-48 -left-48" />
           <div className="mx-auto max-w-6xl px-6 py-28 sm:py-40 relative text-center">
-            
             <h1 className="flex items-center justify-center gap-4 text-5xl sm:text-7xl font-extrabold tracking-tight leading-[1.1]">
-              <Image src={terranextIcon} alt="" className="size-14 sm:size-20" priority />
+              <Image
+                src={terranextIcon}
+                alt=""
+                className="size-14 sm:size-20"
+                priority
+              />
               TerraNext
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-4xl mx-auto">
-              Develop with Next.js. Package with OpenNext. Deploy with Terraform or OpenTofu. Host on AWS.
+              Develop with Next.js. Package with OpenNext. Deploy with Terraform
+              or OpenTofu. Host on AWS.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
               <a
@@ -67,7 +75,7 @@ export default async function Home() {
               >
                 <GitHubIcon />
                 View on GitHub
-                {(stars !== null && stars >= 100) && (
+                {stars !== null && stars >= 100 && (
                   <span className="inline-flex items-center gap-1 ml-1 text-muted">
                     <StarIcon />
                     {stars.toLocaleString()}
@@ -118,7 +126,9 @@ export default async function Home() {
                   <ul className="mt-5 space-y-2.5 text-sm">
                     {option.pros.map((pro) => (
                       <li key={pro} className="flex gap-2.5">
-                        <span className="text-green-500 shrink-0">&#10003;</span>
+                        <span className="text-green-500 shrink-0">
+                          &#10003;
+                        </span>
                         <span className="text-muted">{pro}</span>
                       </li>
                     ))}
@@ -132,7 +142,6 @@ export default async function Home() {
                 </div>
               ))}
             </div>
-            
           </div>
         </section>
 
@@ -163,7 +172,7 @@ export default async function Home() {
                 </div>
                 <CodeBlock language="hcl">{QUICK_START_TF}</CodeBlock>
               </div>
-              { /* New to Terraform? */ }
+              {/* New to Terraform? */}
               <h3 className="text-center text-lg font-medium text-muted">
                 New to Terraform? Start with the{" "}
                 <a
@@ -173,7 +182,8 @@ export default async function Home() {
                   className="text-accent hover:underline"
                 >
                   official Terraform AWS tutorial
-                </a>.
+                </a>
+                .
               </h3>
             </div>
           </div>
@@ -207,7 +217,17 @@ export default async function Home() {
       <footer className="border-t border-border">
         <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-muted">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>A project by <a href="https://oliverhardman.com" target="_blank" rel="noopener noreferrer">Oliver Hardman</a>.</p>
+            <p>
+              A project by{" "}
+              <a
+                href="https://oliverhardman.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Oliver Hardman
+              </a>
+              .
+            </p>
             <div className="flex items-center gap-6">
               <a
                 href="https://opennext.js.org/"
@@ -230,10 +250,76 @@ export default async function Home() {
           </div>
           <div className="mt-4 text-xs text-center sm:text-left space-y-1">
             <p>
-              TerraNext is free and open-source under the <a href={`${GITHUB_URL}/blob/main/LICENSE`}>MIT License</a>. Not affiliated with <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>, <a href="https://opennext.js.org/" target="_blank" rel="noopener noreferrer">OpenNext</a>, <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer">HashiCorp</a> or <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">AWS</a>.
+              TerraNext is free and open-source under the{" "}
+              <a href={`${GITHUB_URL}/blob/main/LICENSE`}>MIT License</a>. Not
+              affiliated with{" "}
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vercel
+              </a>
+              ,{" "}
+              <a
+                href="https://opennext.js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenNext
+              </a>
+              ,{" "}
+              <a
+                href="https://www.hashicorp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HashiCorp
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://aws.amazon.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                AWS
+              </a>
+              .
             </p>
             <p>
-              &ldquo;Terraform&rdquo; is a trademark of <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer">HashiCorp</a>. OpenTofu is a trademark of <a href="https://lfprojects.org/" target="_blank" rel="noopener noreferrer">LF Projects</a>. &ldquo;Next.js&rdquo; is a trademark of <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>. With thanks to <a href="https://github.com/nhsengland" target="_blank" rel="noopener noreferrer">NHS England</a>.
+              &ldquo;Terraform&rdquo; is a trademark of{" "}
+              <a
+                href="https://www.hashicorp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HashiCorp
+              </a>
+              . OpenTofu is a trademark of{" "}
+              <a
+                href="https://lfprojects.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LF Projects
+              </a>
+              . &ldquo;Next.js&rdquo; is a trademark of{" "}
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Vercel
+              </a>
+              . With thanks to{" "}
+              <a
+                href="https://github.com/nhsengland"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NHS England
+              </a>
+              .
             </p>
           </div>
         </div>

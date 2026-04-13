@@ -43,17 +43,41 @@ export function ArrowIcon() {
 
 export function NextjsIcon() {
   return (
-    <svg viewBox="0 0 180 180" fill="none" className="size-10" aria-hidden="true">
-      <mask id="nMask" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180">
+    <svg
+      viewBox="0 0 180 180"
+      fill="none"
+      className="size-10"
+      aria-hidden="true"
+    >
+      <mask
+        id="nMask"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="180"
+        height="180"
+      >
         <circle cx="90" cy="90" r="90" fill="white" />
       </mask>
       <g mask="url(#nMask)">
-        <circle cx="90" cy="90" r="90" fill="currentColor" className="text-foreground" />
+        <circle
+          cx="90"
+          cy="90"
+          r="90"
+          fill="currentColor"
+          className="text-foreground"
+        />
         <path
           d="M149.508 157.52L69.142 54H54v71.97h12.114V69.384l73.885 95.461A90.304 90.304 0 01149.508 157.52z"
           className="fill-background"
         />
-        <rect x="115" y="54" width="12" height="72" className="fill-background" />
+        <rect
+          x="115"
+          y="54"
+          width="12"
+          height="72"
+          className="fill-background"
+        />
       </g>
     </svg>
   );
@@ -62,8 +86,18 @@ export function NextjsIcon() {
 export function OpenNextIcon() {
   return (
     <svg viewBox="0 0 200 200" className="size-10" aria-hidden="true">
-      <path d="M0 0 C9.6 8.2 15.1 18.6 17 31 C19 60.2 13.8 89.7 -5.6 112.5 C-15.7 123.2 -29.2 129.8 -43.9 130.4 C-46 130.5 -48 130.5 -50 130.4 C-51 130.5 -52 130.5 -53 130.5 C-65 130.5 -74.4 126.4 -83.1 118 C-96 104.3 -97.8 88 -97.4 69.9 C-96.7 56.4 -93.7 43.2 -88 31 C-87.5 29.9 -87 28.8 -86.5 27.7 C-78.3 11.2 -65.1 -0.4 -48 -7 C-31.4 -11.7 -14.3 -9.6 0 0 Z M-67 15 C-72.8 22.5 -77.6 30.2 -81 39 C-81.3 39.7 -81.3 39.7 -82.6 43.1 C-88.6 64.4 -90.2 86.9 -80 107 C-74.7 114.7 -67 119.6 -58 122 C-41.9 123.3 -29.3 120.6 -16.8 110.2 C-0.6 95 6.3 71.2 7.2 49.6 C7.5 35 7.3 22.5 -3 11 C-13.2 1.2 -22 -0.3 -35.8 -0.2 C-47.9 0.4 -58.5 6.5 -67 15 Z " fill="currentColor" className="text-foreground" transform="translate(140,39)"/>
-      <path d="M0 0 C4.6 0 9.2 0 14 0 C14.9 1.2 15.7 2.3 16.6 3.6 C24.6 14.5 32.7 25.3 41 36 C41.3 24.1 41.7 12.2 42 0 C45.3 0 48.6 0 52 0 C52 17.8 52 35.6 52 54 C48.4 54 44.7 54 41 54 C40.2 52.9 39.3 51.7 38.5 50.6 C29.5 38.3 20.3 26.1 11 14 C10.7 27.2 10.3 40.4 10 54 C6.7 54 3.4 54 0 54 C0 36.2 0 18.4 0 0 Z " fill="currentColor" className="text-foreground" transform="translate(73,75)"/>
+      <path
+        d="M0 0 C9.6 8.2 15.1 18.6 17 31 C19 60.2 13.8 89.7 -5.6 112.5 C-15.7 123.2 -29.2 129.8 -43.9 130.4 C-46 130.5 -48 130.5 -50 130.4 C-51 130.5 -52 130.5 -53 130.5 C-65 130.5 -74.4 126.4 -83.1 118 C-96 104.3 -97.8 88 -97.4 69.9 C-96.7 56.4 -93.7 43.2 -88 31 C-87.5 29.9 -87 28.8 -86.5 27.7 C-78.3 11.2 -65.1 -0.4 -48 -7 C-31.4 -11.7 -14.3 -9.6 0 0 Z M-67 15 C-72.8 22.5 -77.6 30.2 -81 39 C-81.3 39.7 -81.3 39.7 -82.6 43.1 C-88.6 64.4 -90.2 86.9 -80 107 C-74.7 114.7 -67 119.6 -58 122 C-41.9 123.3 -29.3 120.6 -16.8 110.2 C-0.6 95 6.3 71.2 7.2 49.6 C7.5 35 7.3 22.5 -3 11 C-13.2 1.2 -22 -0.3 -35.8 -0.2 C-47.9 0.4 -58.5 6.5 -67 15 Z "
+        fill="currentColor"
+        className="text-foreground"
+        transform="translate(140,39)"
+      />
+      <path
+        d="M0 0 C4.6 0 9.2 0 14 0 C14.9 1.2 15.7 2.3 16.6 3.6 C24.6 14.5 32.7 25.3 41 36 C41.3 24.1 41.7 12.2 42 0 C45.3 0 48.6 0 52 0 C52 17.8 52 35.6 52 54 C48.4 54 44.7 54 41 54 C40.2 52.9 39.3 51.7 38.5 50.6 C29.5 38.3 20.3 26.1 11 14 C10.7 27.2 10.3 40.4 10 54 C6.7 54 3.4 54 0 54 C0 36.2 0 18.4 0 0 Z "
+        fill="currentColor"
+        className="text-foreground"
+        transform="translate(73,75)"
+      />
     </svg>
   );
 }

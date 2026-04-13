@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     title: "TerraNext",
-    statusBarStyle: "default"
-  }
+    statusBarStyle: "default",
+  },
 };
 
 export default function RootLayout({
