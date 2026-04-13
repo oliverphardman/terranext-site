@@ -25,20 +25,18 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.release.tag_name || github.ref }}
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Configure AWS Credentials
         id: aws-credentials
-        uses: aws-actions/configure-aws-credentials@v6
+        uses: aws-actions/configure-aws-credentials@ec61189d14ec14c8efccab744f656cffd0e33f37 # v6.1.0
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Setup Node.js
         id: setup-node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
@@ -49,11 +47,11 @@ jobs:
 
       - name: Build OpenNext
         id: build-opennext
-        run: npx @opennextjs/aws@latest build
+        run: npx @opennextjs/aws@3.10.1 build
 
       - name: Setup Terraform
         id: setup-terraform
-        uses: hashicorp/setup-terraform@v4
+        uses: hashicorp/setup-terraform@5e8dbf3c6d9deaf4193ca7a8fb23f2ac83bb6c85 # 4.0.0
         with:
           terraform_version: ${{ env.TERRAFORM_VERSION }}
 

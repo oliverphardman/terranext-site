@@ -1,0 +1,45 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.configPath": ".prettierrc",
+	"terraform.experimentalFeatures.validateOnSave": true,
+	"terraform.experimentalFeatures.prefillRequiredFields": false,
+	"terraform.validation.enableEnhancedValidation": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.fixAll": "explicit"
+		}
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit",
+			"source.removeUnusedImports": "explicit",
+			"source.fixAll": "explicit"
+		}
+	},
+	"[shellscript]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	},
+	"[terraform]": {
+		"editor.defaultFormatter": "hashicorp.terraform",
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file"
+	},
+	"[terraform-vars]": {
+		"editor.defaultFormatter": "hashicorp.terraform",
+		"editor.formatOnSave": true,
+		"editor.formatOnSaveMode": "file"
+	},
+	"[dotenv]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
+	}
+}
