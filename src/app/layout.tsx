@@ -70,12 +70,12 @@ export const metadata: Metadata = {
 };
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: "TerraNext",
-  url: "https://terranext.dev",
-  description
-}
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	name: "TerraNext",
+	url: "https://terranext.dev",
+	description,
+};
 
 export default function RootLayout({
 	children,
@@ -85,10 +85,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}>
 			<body className="min-h-full flex flex-col">
-				<Script
-					src="https://www.googletagmanager.com/gtag/js?id=G-2CRC10JNEM"
-					strategy="afterInteractive"
-				/>
+				<Script src="https://www.googletagmanager.com/gtag/js?id=G-2CRC10JNEM" strategy="afterInteractive" />
 				<Script id="ga-init" strategy="afterInteractive">
 					{`
 						window.dataLayer = window.dataLayer || [];
@@ -97,10 +94,7 @@ export default function RootLayout({
 						gtag('config', 'G-2CRC10JNEM');
 					`}
 				</Script>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-				/>
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 				{children}
 			</body>
 		</html>
