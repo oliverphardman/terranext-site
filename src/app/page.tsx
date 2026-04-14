@@ -219,7 +219,7 @@ export default async function Home() {
 							<ThemeToggle />
 						</div>
 					</div>
-					<div className="mt-4 text-xs text-center sm:text-left space-y-1">
+					<div className="mt-4 text-xs text-left space-y-1">
 						<p>
 							TerraNext is free and open-source under the <a href={`${GITHUB_URL}/blob/main/LICENSE`}>MIT License</a>.
 							Not affiliated with{" "}
