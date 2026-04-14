@@ -22,5 +22,5 @@ TerraNext is an open-source Terraform module that deploys Next.js applications t
 
 ## Links
 
-- Source: https://github.com/oliverphardman/terraform-aws-opennext
+- Source: https://github.com/terranext-dev/terraform-aws-opennext
 - Website: https://terranext.dev

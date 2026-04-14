@@ -67,7 +67,7 @@ module "terranext" {
 
 ## Links
 
-- Source: https://github.com/oliverphardman/terraform-aws-opennext
+- Source: https://github.com/terranext-dev/terraform-aws-opennext
 - Website: https://terranext.dev
 - OpenNext: https://opennext.js.org
 - License: MIT
