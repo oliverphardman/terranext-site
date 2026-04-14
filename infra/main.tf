@@ -17,7 +17,7 @@ resource "aws_route53_record" "google_site_verification" {
   zone_id = aws_route53_zone.this.zone_id
   name    = local.domain
   type    = "TXT"
-  records = ["google-site-verification=${local.google_site_verification_value}"]
+  records = ["google-site-verification=${local.google_site_verification_code}"]
   ttl     = 300
 
   allow_overwrite = true
