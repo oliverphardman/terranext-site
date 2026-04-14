@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.1.2...v1.2.0) (2026-04-14)
+
+
+### Features
+
+* GA4 ([b4703b2](https://github.com/TerraNext-Dev/terranext-site/commit/b4703b2fb1d9b5905c85e9ba03385f6ceee34fac))
+* Google site verification ([d2ec66b](https://github.com/TerraNext-Dev/terranext-site/commit/d2ec66b1622c0bb1e5fb1bc79aff8454a15888e3))
+
+
+### Bug Fixes
+
+* reference to google_site_vertification_code ([ed88b29](https://github.com/TerraNext-Dev/terranext-site/commit/ed88b292fd13d76831e3bfe2c93efac3c4ca1a53))
+* text-left footer text ([b6e6f4e](https://github.com/TerraNext-Dev/terranext-site/commit/b6e6f4e580aada621f9f416a078f4d1ebe0bd2e4))
+
 ## [1.1.2](https://github.com/TerraNext-Dev/terranext-site/compare/v1.1.1...v1.1.2) (2026-04-13)
 
 
