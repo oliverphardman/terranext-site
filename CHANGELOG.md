@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.2.0...v1.3.0) (2026-04-15)
+
+
+### Features
+
+* Lambda streaming ([1f21c6a](https://github.com/TerraNext-Dev/terranext-site/commit/1f21c6ad1d2e618e9a7d1ed1602844c795a80da1))
+
 ## [1.2.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.1.2...v1.2.0) (2026-04-14)
 
 
