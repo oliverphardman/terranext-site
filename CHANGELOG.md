@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.3.0...v1.4.0) (2026-04-16)
+
+
+### Features
+
+* add OpenTofu Registry link ([8e423c9](https://github.com/TerraNext-Dev/terranext-site/commit/8e423c94ae2b8e5a9daf5c3bf62b993c49da171c))
+
 ## [1.3.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.2.0...v1.3.0) (2026-04-15)
 
 
