@@ -171,12 +171,12 @@ export default async function Home() {
 						<p className="mt-4 text-muted text-lg max-w-xl mx-auto">
 							TerraNext is open source and free to use under the MIT License.
 						</p>
-						<div className="mt-10 flex justify-center gap-4">
+						<div className="sm:max-w-4xl mx-auto mt-10 flex flex-wrap gap-4">
 							<a
 								href={GITHUB_URL}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="group inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
+								className="inline-flex grow basis-72 items-center justify-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
 							>
 								<GitHubIcon />
 								View on GitHub
@@ -185,7 +185,7 @@ export default async function Home() {
 								href={TERRAFORM_REGISTRY_URL}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-7 py-3.5 text-sm font-semibold transition-all hover:bg-card-hover hover:-translate-y-0.5"
+								className="inline-flex grow basis-72 items-center justify-center gap-2 rounded-xl border border-border px-7 py-3.5 text-sm font-semibold transition-all hover:bg-card-hover hover:-translate-y-0.5"
 							>
 								<SiTerraform className="size-5 text-terraform-primary" />
 								View on Terraform Registry
@@ -194,7 +194,7 @@ export default async function Home() {
 								href={OPENTOFU_REGISTRY_URL}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="inline-flex items-center justify-center gap-2 rounded-xl border border-border px-7 py-3.5 text-sm font-semibold transition-all hover:bg-card-hover hover:-translate-y-0.5"
+								className="inline-flex grow basis-72 items-center justify-center gap-2 rounded-xl border border-border px-7 py-3.5 text-sm font-semibold transition-all hover:bg-card-hover hover:-translate-y-0.5"
 							>
 								<SiOpentofu className="size-5 text-opentofu-primary" />
 								View on OpenTofu Registry
