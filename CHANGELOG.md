@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/TerraNext-Dev/terranext-site/compare/v1.5.0...v1.5.1) (2026-04-20)
+
+
+### Bug Fixes
+
+* move favicon.ico to S3 origin ([210f050](https://github.com/TerraNext-Dev/terranext-site/commit/210f050022536c352f5904e13780022dd7ee3071))
+
 ## [1.5.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.4.0...v1.5.0) (2026-04-19)
 
 
