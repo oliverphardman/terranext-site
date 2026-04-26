@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.5.1...v1.6.0) (2026-04-26)
+
+
+### Features
+
+* add [@id](https://github.com/id) property to jsonLd ([ffc5177](https://github.com/TerraNext-Dev/terranext-site/commit/ffc5177228454fc212b8100c3cca535fe8da875b))
+
 ## [1.5.1](https://github.com/TerraNext-Dev/terranext-site/compare/v1.5.0...v1.5.1) (2026-04-20)
 
 
