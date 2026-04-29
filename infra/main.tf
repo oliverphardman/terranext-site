@@ -120,7 +120,7 @@ module "terranext" {
   deployment_domain   = local.domain
   acm_arn             = aws_acm_certificate_validation.this.certificate_arn
   hosted_zone_id      = aws_route53_zone.this.zone_id
-  static_paths        = ["/favicon.ico"]
+  static_paths        = ["/favicon.ico", "/llms.txt", "/.well-known/*"]
   create_dns_records  = true
   server_streaming    = true
 }
