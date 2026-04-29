@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/TerraNext-Dev/terranext-site/compare/v1.5.1...v1.6.0) (2026-04-29)
+
+
+### Features
+
+* add [@id](https://github.com/id) property to jsonLd ([ffc5177](https://github.com/TerraNext-Dev/terranext-site/commit/ffc5177228454fc212b8100c3cca535fe8da875b))
+
+
+### Bug Fixes
+
+* additional static paths to main.tf ([ce76abf](https://github.com/TerraNext-Dev/terranext-site/commit/ce76abf7d7649543e83e7f5bcb0018ccf8739f30))
+
 ## [1.5.1](https://github.com/TerraNext-Dev/terranext-site/compare/v1.5.0...v1.5.1) (2026-04-20)
 
 
